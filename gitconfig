@@ -1,0 +1,5 @@
+[user]
+	email = nathan@felixandpaul.com
+	name = Nathan Smith
+[core]
+	editor = vim
