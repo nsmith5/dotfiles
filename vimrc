@@ -5,6 +5,7 @@ set number
 let base16colorspace=256
 set termguicolors
 set tabstop=4
+set shiftwidth=4
 
 call plug#begin('~/.vim/plugged')
 
