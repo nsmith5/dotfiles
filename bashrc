@@ -6,7 +6,8 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific environment
-PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+export GOPATH=~/.go
+PATH="$HOME/.local/bin:$HOME/bin:$GOPATH/bin:$PATH"
 export PATH
 
 function _update_ps1() {
