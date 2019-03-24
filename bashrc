@@ -9,11 +9,11 @@ fi
 PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 export PATH
 
-if [ -f `which powerline-daemon` ]; 
-then
-	powerline-daemon -q
-	POWERLINE_BASH_CONTINUATION=1
-	POWERLINE_BASH_SELECT=1
-	. /usr/share/powerline/bash/powerline.sh
+function _update_ps1() {
+	eval "$(powerline-go -error $? -eval)"
+}
+
+if [ "$TERM" != "linux" ]; then
+	PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
 
