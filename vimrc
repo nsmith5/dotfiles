@@ -1,5 +1,6 @@
 inoremap jk <ESC>
 vnoremap jk <ESC>
+nmap <silent> <C-\> :NERDTreeToggle<CR>
 set number
 
 let base16colorspace=256
