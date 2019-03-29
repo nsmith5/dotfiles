@@ -1,13 +1,14 @@
+"Key mappings
 inoremap jk <ESC>
 vnoremap jk <ESC>
 nmap <silent> <C-\> :NERDTreeToggle<CR>
-set number
 
-let base16colorspace=256
-set termguicolors
+"Editor details
+set number
 set tabstop=4
 set shiftwidth=4
 
+"Plugged plugins
 call plug#begin('~/.vim/plugged')
 
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
@@ -20,5 +21,8 @@ Plug 'w0rp/ale'
 
 call plug#end()
 
-let g:airline_theme='base16_atelierdune'
-colorscheme base16-atelier-dune
+"Color scheme details
+let base16colorspace=256
+set termguicolors
+let g:airline_theme='base16'
+colorscheme base16-onedark
