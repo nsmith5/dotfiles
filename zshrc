@@ -1,4 +1,4 @@
-export ZSH="/home/nsmith/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 export GOPATH=~/.go
 PATH="$HOME/.local/bin:$HOME/bin:$GOPATH/bin:$PATH"
@@ -8,7 +8,8 @@ ZSH_THEME="agnoster"
 
 plugins=(
 	git
-	golang
+	colorize
+	sudo
 )
 
 source $ZSH/oh-my-zsh.sh
