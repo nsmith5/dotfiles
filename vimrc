@@ -1,12 +1,21 @@
 "Key mappings
 inoremap jk <ESC>
 vnoremap jk <ESC>
+"Split navigation
+nnoremap <C-j> <C-w><C-j>
+nnoremap <C-k> <C-w><C-k>
+nnoremap <C-l> <C-w><C-l>
+nnoremap <C-h> <C-w><C-h>
+
 nmap <silent> <C-\> :NERDTreeToggle<CR>
+
+
 
 "Editor details
 set number
 set tabstop=4
 set shiftwidth=4
+set scrolloff=10
 
 "Plugged plugins
 call plug#begin('~/.vim/plugged')
@@ -20,6 +29,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'w0rp/ale'
+Plug 'JuliaEditorSupport/julia-vim'
 
 call plug#end()
 
