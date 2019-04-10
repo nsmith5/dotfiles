@@ -1,6 +1,6 @@
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
-	url = git@github.com:robbyrussell/oh-my-zsh.git
+	url = https://github.com/robbyrussell/oh-my-zsh
 [submodule "config/base16-gnome-terminal"]
 	path = config/base16-gnome-terminal
-	url = git@github.com:aaron-williamson/base16-gnome-terminal.git
+	url = https://github.com/aaron-williamson/base16-gnome-terminal
