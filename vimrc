@@ -20,6 +20,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'w0rp/ale'
+Plug 'JuliaEditorSupport/julia-vim'
+Plug 'mrk21/yaml-vim'
 
 call plug#end()
 
