@@ -39,3 +39,7 @@ let base16colorspace=256
 set termguicolors
 let g:airline_theme='base16'
 colorscheme base16-onedark
+
+"Undo with history (past file close)
+set undodir=~/.vimdid
+set undofile
