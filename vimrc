@@ -12,7 +12,7 @@ nnoremap <C-h> <C-w><C-h>
 nmap <silent> <C-\> :NERDTreeToggle<CR>
 
 "Editor details
-set number
+set relativenumber
 set tabstop=4
 set shiftwidth=4
 set scrolloff=10
