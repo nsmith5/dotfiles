@@ -4,7 +4,7 @@ export GOPATH=~/.go
 PATH="$HOME/.local/bin:$HOME/bin:$GOPATH/bin:$PATH"
 export PATH
 
-ZSH_THEME="bira"
+ZSH_THEME="kennethreitz"
 
 plugins=(
 	git
