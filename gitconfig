@@ -3,6 +3,3 @@
 	name = Nathan Smith
 [core]
 	editor = vim
-
-[url "ssh://git@bitbucket.org/felixandpaul/"]
-	insteadOf = https://bitbucket.org/felixandpaul/
