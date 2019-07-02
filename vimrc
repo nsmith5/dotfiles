@@ -23,7 +23,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'danielwe/base16-vim'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'mrk21/yaml-vim'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'

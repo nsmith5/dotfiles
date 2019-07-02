@@ -1,12 +1,22 @@
+function mpstat
+    podman run --rm mpstat
+end
+
 function memory_usage
     free | grep Mem | awk '{printf "%0.1f%", (($2 - $7) / $2) * 100}'
 end
 
-set fish_greeting "Date: "(set_color purple)(date --rfc-3339=seconds)(set_color normal)"
-Host: "(set_color blue)(hostname)(set_color normal)"
-Path: "(set_color green)(pwd)(set_color normal)"
-RAM: "(set_color yellow)(memory_usage)(set_color normal)"
-CPU: "(set_color red)(echo unknown)(set_color normal)
+function cpu_usage
+    mpstat | grep all | awk '{printf "%0.2f%", $3}'
+end
+
+set fish_greeting "Who: "(set_color purple)(whoami)(set_color normal)"
+When: "(set_color blue)(date --rfc-3339=seconds)(set_color normal)"
+Where: "(set_color green)(hostname)" @ "(pwd)(set_color normal)"
+Health:
+    RAM: "(set_color yellow)(memory_usage)(set_color normal)"
+    CPU: "(set_color red)(cpu_usage)(set_color normal)"
+"
 
 function fish_prompt
     set -l color_cwd
