@@ -1,13 +1,9 @@
-function mpstat
-    podman run --rm mpstat
-end
-
 function memory_usage
     free | grep Mem | awk '{printf "%0.1f%", (($2 - $7) / $2) * 100}'
 end
 
 function cpu_usage
-    mpstat | grep all | awk '{printf "%0.2f%", $3}'
+    mpstat | grep all | awk '{printf "%0.2f%", $4}'
 end
 
 set fish_greeting "Who: "(set_color purple)(whoami)(set_color normal)"
