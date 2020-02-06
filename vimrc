@@ -21,16 +21,18 @@ set scrolloff=10
 "Plugged plugins
 call plug#begin('~/.vim/plugged')
 
-Plug 'JuliaEditorSupport/julia-vim'
 Plug 'danielwe/base16-vim'
-Plug 'mrk21/yaml-vim'
-Plug 'mxw/vim-jsx'
-Plug 'pangloss/vim-javascript'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'w0rp/ale'
-Plug 'dag/vim-fish'
+
+" Language Support
+Plug 'fatih/vim-go'
+Plug 'mxw/vim-jsx'
+Plug 'JuliaEditorSupport/julia-vim'
+Plug 'mrk21/yaml-vim'
+Plug 'pangloss/vim-javascript'
+Plug 'w0rp/ale' "General purpose linter
 
 call plug#end()
 
