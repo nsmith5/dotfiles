@@ -27,10 +27,10 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " Language Support
-Plug 'fatih/vim-go'
-Plug 'mxw/vim-jsx'
 Plug 'JuliaEditorSupport/julia-vim'
+Plug 'fatih/vim-go'
 Plug 'mrk21/yaml-vim'
+Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 Plug 'w0rp/ale' "General purpose linter
 

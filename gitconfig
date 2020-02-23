@@ -1,7 +1,7 @@
 [user]
     email = nathan@nfsmith.ca
     name = Nathan Smith
-    signing-key = 6E7F05E982A07742
+    signing-key = A0748406718603A9
 [core]
     editor = vim
 [commit]
