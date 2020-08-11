@@ -22,6 +22,7 @@ set scrolloff=10
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 autocmd FileType css setlocal shiftwidth=2 tabstop=2
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+autocmd FileType vue setlocal shiftwidth=2 tabstop=2
 
 "Plugged plugins
 call plug#begin('~/.vim/plugged')
@@ -36,7 +37,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'fatih/vim-go'
 Plug 'mrk21/yaml-vim'
-Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 Plug 'w0rp/ale' "General purpose linter
 
