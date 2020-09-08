@@ -37,6 +37,12 @@ Plug 'junegunn/fzf.vim'
 Plug 'fatih/vim-go'
 Plug 'w0rp/ale' "General purpose linter
 
+"Rainbow parens (for lisps)
+Plug 'kien/rainbow_parentheses.vim'
+
+" Base 16 Colorschemes
+Plug 'chriskempson/base16-vim'
+
 call plug#end()
 
 "Undo with history (past file close)
@@ -51,3 +57,8 @@ set laststatus=2 " Always display the statusline in all windows
 set showtabline=2 " Always display the tabline, even if there is only one tab
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 set t_Co=256
+
+if filereadable(expand("~/.vimrc_background"))
+    let base16colorspace=256
+    source ~/.vimrc_background
+endif
