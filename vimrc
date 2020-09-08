@@ -37,9 +37,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'fatih/vim-go'
 Plug 'w0rp/ale' "General purpose linter
 
-"Rainbow parens (for lisps)
-Plug 'kien/rainbow_parentheses.vim'
-
 " Base 16 Colorschemes
 Plug 'chriskempson/base16-vim'
 
@@ -49,15 +46,7 @@ call plug#end()
 set undodir=~/.vimdid
 set undofile
 
-" Powerline
-python3 from powerline.vim import setup as powerline_setup
-python3 powerline_setup()
-python3 del powerline_setup
-set laststatus=2 " Always display the statusline in all windows
-set showtabline=2 " Always display the tabline, even if there is only one tab
-set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
-set t_Co=256
-
+"Read vim colorsheme from base16-shell colorscheme
 if filereadable(expand("~/.vimrc_background"))
     let base16colorspace=256
     source ~/.vimrc_background
