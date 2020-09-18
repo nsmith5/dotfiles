@@ -12,6 +12,9 @@ then
 fi
 export PATH
 
+# Default command line editor == vim
+export EDITOR=vim
+
 # Base16 Colors
 BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && \
