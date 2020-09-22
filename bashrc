@@ -22,7 +22,8 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 eval "$("$BASE16_SHELL/profile_helper.sh")"
 
 # gpg-agent as SSH agent instead of gnome keyring
-export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/gnupg/S.gpg-agent.ssh"
+$HOME/.local/bin/gpg-agent-relay start
+export SSH_AUTH_SOCK="$HOME/.gnupg/S.gpg-agent.ssh"
 
 # Make GOPATH a hidden directory because its abnoxious when our home directory
 # gets filled with unneccessary clutter
