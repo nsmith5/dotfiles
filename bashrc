@@ -11,6 +11,7 @@ then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
 export PATH
+export PATH="/usr/local/go/bin:$PATH"
 
 # Default command line editor == vim
 export EDITOR=vim
@@ -27,3 +28,7 @@ export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/gnupg/S.gpg-agent.ssh"
 # Make GOPATH a hidden directory because its abnoxious when our home directory
 # gets filled with unneccessary clutter
 export GOPATH=$HOME/.go
+export PATH="$GOPATH/bin:$PATH"
+
+# Use exa instead of ls
+alias ls=exa
