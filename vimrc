@@ -36,6 +36,7 @@ Plug 'junegunn/fzf.vim'
 " Language Support
 Plug 'fatih/vim-go'
 Plug 'w0rp/ale' "General purpose linter
+Plug 'hashivim/vim-terraform'
 
 " Base 16 Colorschemes
 Plug 'chriskempson/base16-vim'
