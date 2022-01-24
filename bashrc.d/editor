@@ -1,0 +1,2 @@
+# Default command line editor == vim
+export EDITOR=vim

@@ -1,0 +1,3 @@
+# Make GOPATH a hidden directory because its abnoxious when our home directory
+# gets filled with unneccessary clutter
+export GOPATH=$HOME/.go
