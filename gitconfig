@@ -1,12 +1,19 @@
 [user]
-    email = nathan@nfsmith.ca
+    email = nathan@chainguard.dev
     name = Nathan Smith
-    signing-key = 2D0674D2E67847E5 
 [core]
-    editor = vim
+    editor = nvim
 [commit]
     gpgsign = true
+[gpg.x509]
+    program = gitsign
+[gpg]
+    format = x509
+[gitsign]
+    connectorID = https://accounts.google.com
 [pull]
     rebase = true
+[push]
+    autoSetupRemote = true
 [format]
     signoff = true
