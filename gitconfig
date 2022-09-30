@@ -5,12 +5,14 @@
     editor = nvim
 [commit]
     gpgsign = true
-[gpg.x509]
+[tag]
+    gpgsign = true
+[gpg "x509"]
     program = gitsign
 [gpg]
     format = x509
 [gitsign]
-    connectorID = https://accounts.google.com
+	connectorID = https://accounts.google.com
 [pull]
     rebase = true
 [push]

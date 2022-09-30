@@ -14,7 +14,7 @@ lspconfig.gopls.setup {
         -- Go to definition 
         vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { buffer = 0})
         -- Go to type definition 
-        vim.keymap.set('n', 'gt', vim.lsp.buf.type_definition, { buffer = 0 })
+        vim.keymap.set('n', 'gtd', vim.lsp.buf.type_definition, { buffer = 0 })
         -- Go to implementation
         vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, { buffer = 0 })
         -- Go to all references 
@@ -27,6 +27,20 @@ lspconfig.gopls.setup {
         vim.keymap.set('n', 'gdl', "<cmd>Telescope diagnostics<cr>", { buffer = 0 })
         -- Go rename everything
         vim.keymap.set('n', 'grn', vim.lsp.buf.rename, { buffer = 0 })
+
+        --Format on save
+        vim.api.nvim_create_autocmd({"BufWritePre"}, {
+            pattern = {"*.go"},
+            callback = vim.lsp.buf.formatting_sync,
+        })
+
+        -- Run all code actions?
+        --[[
+        vim.api.nvim_create_autocmd({"BufWritePre"}, {
+            pattern = {"*.go"},
+            callback = vim.lsp.buf.code_action,
+        })
+        --]]
     end,
     settings = {
         gopls = {
@@ -36,4 +50,13 @@ lspconfig.gopls.setup {
             staticcheck = true,
         },
     },
+}
+
+lspconfig.terraformls.setup {
+    on_attach = function()
+        vim.api.nvim_create_autocmd({"BufWritePre"}, {
+            pattern = {"*.tf", "*.tfvars"},
+            callback = vim.lsp.buf.formatting_sync,
+        })
+    end,
 }
