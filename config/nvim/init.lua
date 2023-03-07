@@ -8,6 +8,7 @@ vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
 vim.opt.scrolloff = 10
 vim.opt.relativenumber = true
+vim.opt.clipboard = "unnamedplus"
 
 -- compeletion
 vim.opt.completeopt = {
@@ -17,7 +18,7 @@ vim.opt.completeopt = {
 }
 
 -- colorscheme
-vim.g.catppuccin_flavour = "frappe" -- latte, frappe, macchiato, mocha
+vim.g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
 
 require("catppuccin").setup()
 
